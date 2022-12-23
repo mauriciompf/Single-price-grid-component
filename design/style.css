@@ -25,3 +25,13 @@
 	font-size: inherit;
 	font-family: var(--ff-body);
 }
+
+#page-wrap {
+	background-color: var(--clr-neutral-light-gray);
+	font-size: var(--fs-500);
+}
+
+.wrapper {
+	display: grid;
+	place-items: center;
+}
