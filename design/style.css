@@ -35,3 +35,119 @@
 	display: grid;
 	place-items: center;
 }
+
+/* Center Big Card - Desktop */
+@media (min-width: 615px) {
+	.wrapper {
+		height: 100vh;
+	}
+}
+
+.big-card {
+	width: min(700rem / 16, 85%);
+	margin: 2rem 0;
+}
+
+.card {
+	padding: 1rem;
+	color: #fff;
+}
+
+/* Size padding card - Desktop */
+@media (min-width: 615px) { .card { padding: 2rem 2rem; } }
+
+.title { font-size: var(--fs-600); }
+
+.title, .subtitle, .paragraph, .btn-sign-up { margin: 1rem 0; }
+
+.paragraph {
+	color: var(--clr-neutral-grayish-blue);
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+/* Card One */
+.card-one {
+	background-color: #fff;
+	border-radius: .5rem .5rem 0 0;
+}
+
+.title-one { color: var(--clr-primary-cryan); }
+
+.subtitle { color: var(--clr-primary-bright-color); }
+
+/* Columns Cards in Desktop */
+@media (min-width: 615px) {
+	.columns-cards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* Card Two */
+.card-two { background-color: var(--clr-primary-cryan); }
+
+.price-col-1 { font-size: var(--fs-price); }
+
+.price-col-2 {
+	padding-left: .5rem;
+
+	color: var(--clr-neutral-light-gray);
+}
+
+.paragraph-two {
+	margin-top: .5rem;
+
+	color: #fff;
+}
+
+.form { text-align: center; }
+
+.btn-sign-up {
+	min-width: 100%;
+	padding: 1rem;
+	margin-bottom: .5rem;
+
+	background-color: var(--clr-primary-bright-color);
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	outline: none;
+	border-radius: .5rem;
+	box-shadow:
+		0 0 .1rem #000;
+	cursor: pointer;
+}
+
+.btn-sign-up:active { transform: translateY(2px); }
+
+/* Button size Desktop */
+@media (min-width: 615px) {
+	.btn-sign-up {
+		min-width: 80%;
+	}
+}
+
+/* Card Three */
+.card-three {
+	background-color: var(--clr-neutral-light-cryan);
+	border-radius: 0 0 .5rem .5rem;
+}
+
+.paragraph-three {
+	color: var(--clr-neutral-light-gray);
+	padding-right: 5rem;
+	line-height: 1.5rem;
+}
+
+@media (min-width: 615px) {
+	/* Border Radius */
+	.card-two {border-radius: 0 0 0 .5rem;}
+
+	.card-three { border-radius: 0 0 .5rem 0; }
+
+	/* Paragraph padding-right */
+	.paragraph-three {
+		padding-right: 3rem;
+	}
+}
