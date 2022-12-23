@@ -18,7 +18,9 @@
 	--fs-500: 1rem;
 }
 
-* {
+*
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -38,9 +40,7 @@
 
 /* Center Big Card - Desktop */
 @media (min-width: 615px) {
-	.wrapper {
-		height: 100vh;
-	}
+	.wrapper {height: 100vh;}
 }
 
 .big-card {
@@ -54,7 +54,9 @@
 }
 
 /* Size padding card - Desktop */
-@media (min-width: 615px) { .card { padding: 2rem 2rem; } }
+@media (min-width: 615px) {
+	.card { padding: 2rem 2rem; }
+}
 
 .title { font-size: var(--fs-600); }
 
@@ -76,7 +78,7 @@
 
 .subtitle { color: var(--clr-primary-bright-color); }
 
-/* Columns Cards in Desktop */
+/* Columns Cards - Desktop */
 @media (min-width: 615px) {
 	.columns-cards {
 		display: grid;
@@ -91,13 +93,11 @@
 
 .price-col-2 {
 	padding-left: .5rem;
-
 	color: var(--clr-neutral-light-gray);
 }
 
 .paragraph-two {
 	margin-top: .5rem;
-
 	color: #fff;
 }
 
@@ -107,7 +107,6 @@
 	min-width: 100%;
 	padding: 1rem;
 	margin-bottom: .5rem;
-
 	background-color: var(--clr-primary-bright-color);
 	color: #fff;
 	font-weight: 600;
@@ -121,11 +120,9 @@
 
 .btn-sign-up:active { transform: translateY(2px); }
 
-/* Button size Desktop */
+/* Button size - Desktop */
 @media (min-width: 615px) {
-	.btn-sign-up {
-		min-width: 80%;
-	}
+	.btn-sign-up { min-width: 80%; }
 }
 
 /* Card Three */
@@ -140,14 +137,13 @@
 	line-height: 1.5rem;
 }
 
+/* Column Cards and paragraph three - Desktop */
 @media (min-width: 615px) {
 	/* Border Radius */
-	.card-two {border-radius: 0 0 0 .5rem;}
+	.card-two { border-radius: 0 0 0 .5rem; }
 
 	.card-three { border-radius: 0 0 .5rem 0; }
 
 	/* Paragraph padding-right */
-	.paragraph-three {
-		padding-right: 3rem;
-	}
+	.paragraph-three { padding-right: 3rem; }
 }
