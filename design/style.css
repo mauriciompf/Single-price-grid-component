@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+	/* Font */
+	--ff-body: 'Ubuntu', sans-serif;
+
+	/* Colors */
+	--clr-primary-cryan: hsl(179, 62%, 43%);
+	--clr-neutral-light-cryan: hsl(179,47%,52%);
+	--clr-primary-bright-color: hsl(71, 73%, 54%);
+
+	--clr-neutral-light-gray: hsl(204, 43%, 93%);
+	--clr-neutral-grayish-blue: hsl(218, 22%, 67%);
+
+	/* Font Size */
+	--fs-price: 1.7rem;
+	--fs-600: 1.3rem;
+	--fs-500: 1rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: inherit;
+	font-family: var(--ff-body);
+}
