@@ -31,6 +31,7 @@
 #page-wrap {
 	background-color: var(--clr-neutral-light-gray);
 	font-size: var(--fs-500);
+	font-family: var(--ff-body);
 }
 
 .wrapper {
